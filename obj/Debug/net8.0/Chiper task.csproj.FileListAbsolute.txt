@@ -1,0 +1,15 @@
+C:\Users\HOME\source\chiper-task\bin\Debug\net8.0\Chiper task.exe
+C:\Users\HOME\source\chiper-task\bin\Debug\net8.0\Chiper task.deps.json
+C:\Users\HOME\source\chiper-task\bin\Debug\net8.0\Chiper task.runtimeconfig.json
+C:\Users\HOME\source\chiper-task\bin\Debug\net8.0\Chiper task.dll
+C:\Users\HOME\source\chiper-task\bin\Debug\net8.0\Chiper task.pdb
+C:\Users\HOME\source\chiper-task\obj\Debug\net8.0\Chiper task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HOME\source\chiper-task\obj\Debug\net8.0\Chiper task.AssemblyInfoInputs.cache
+C:\Users\HOME\source\chiper-task\obj\Debug\net8.0\Chiper task.AssemblyInfo.cs
+C:\Users\HOME\source\chiper-task\obj\Debug\net8.0\Chiper task.csproj.CoreCompileInputs.cache
+C:\Users\HOME\source\chiper-task\obj\Debug\net8.0\Chiper task.sourcelink.json
+C:\Users\HOME\source\chiper-task\obj\Debug\net8.0\Chiper task.dll
+C:\Users\HOME\source\chiper-task\obj\Debug\net8.0\refint\Chiper task.dll
+C:\Users\HOME\source\chiper-task\obj\Debug\net8.0\Chiper task.pdb
+C:\Users\HOME\source\chiper-task\obj\Debug\net8.0\Chiper task.genruntimeconfig.cache
+C:\Users\HOME\source\chiper-task\obj\Debug\net8.0\ref\Chiper task.dll

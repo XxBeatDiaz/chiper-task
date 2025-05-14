@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\itzhak\\source\\repos\\Chiper task\\Chiper task\\Chiper task.csproj": {}
+    "C:\\Users\\HOME\\source\\chiper-task\\Chiper task.csproj": {}
   },
   "projects": {
-    "C:\\Users\\itzhak\\source\\repos\\Chiper task\\Chiper task\\Chiper task.csproj": {
+    "C:\\Users\\HOME\\source\\chiper-task\\Chiper task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\itzhak\\source\\repos\\Chiper task\\Chiper task\\Chiper task.csproj",
+        "projectUniqueName": "C:\\Users\\HOME\\source\\chiper-task\\Chiper task.csproj",
         "projectName": "Chiper task",
-        "projectPath": "C:\\Users\\itzhak\\source\\repos\\Chiper task\\Chiper task\\Chiper task.csproj",
-        "packagesPath": "C:\\Users\\itzhak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\itzhak\\source\\repos\\Chiper task\\Chiper task\\obj\\",
+        "projectPath": "C:\\Users\\HOME\\source\\chiper-task\\Chiper task.csproj",
+        "packagesPath": "C:\\Users\\HOME\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HOME\\source\\chiper-task\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\itzhak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HOME\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
