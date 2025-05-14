@@ -18,6 +18,15 @@
             { 'V', 'E' }, { 'W', 'D' }, { 'X', 'C' },
             { 'Y', 'B' }, { 'Z', 'A' }
         };
+
+
+        //convert string to array-string(word)
+        static string[] ConvertToList(string str)
+        {
+            string[] arrStr = str.Split(' ');
+            return arrStr;
+        }
+        
     }
 }
 
