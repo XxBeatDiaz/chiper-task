@@ -4,7 +4,7 @@
     {
         static void Main()
         {
-            
+
         }
         static Dictionary<char, char> lookupTable = new Dictionary<char, char>
         {
@@ -25,6 +25,20 @@
         {
             string[] arrStr = str.Split(' ');
             return arrStr;
+        }
+
+        //Accepts a word and a string and returns how many times it appears.
+        static int CountWordExists(string[] wordArray, string word)
+        {
+            int countWord = 0;
+            foreach (var item in wordArray)
+            {
+                if (item == word)
+                {
+                    countWord++;
+                }
+            }
+            return countWord;
         }
         
     }
