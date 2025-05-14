@@ -4,7 +4,7 @@
     {
         static void Main()
         {
-            System.Console.WriteLine(CleanString("hhgsd fg$$$5  ^jgd eh$hghd."));
+            
         }
         static Dictionary<char, char> lookupTable = new Dictionary<char, char>
         {
@@ -55,6 +55,15 @@
             return cleanString;
         }
  
+        //Clearing an array of empty cells
+        static string[] CleanArray(string[] wordArray)
+        {
+            List<string> ListWord = new List<string>();
+            ListWord = wordArray.ToList();
+            ListWord.RemoveAll(r => r == "");
+            string[] cleanArr = ListWord.ToArray();
+            return cleanArr;
+        }
     }
 }
 
