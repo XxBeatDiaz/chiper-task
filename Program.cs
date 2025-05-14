@@ -4,7 +4,7 @@
     {
         static void Main()
         {
-
+            System.Console.WriteLine(CleanString("hhgsd fg$$$5  ^jgd eh$hghd."));
         }
         static Dictionary<char, char> lookupTable = new Dictionary<char, char>
         {
@@ -21,7 +21,7 @@
 
 
         //convert string to array-string(word)
-        static string[] ConvertToList(string str)
+        static string[] ConvertToArray(string str)
         {
             string[] arrStr = str.Split(' ');
             return arrStr;
@@ -41,6 +41,20 @@
             return countWord;
         }
         
+        //Cleaning a string of unnecessary characters
+        static string CleanString(string str)
+        {
+            string cleanString = "";
+            foreach (char letter in str)
+            {
+                if (char.IsLetter(letter) || letter == ' ')
+                {
+                    cleanString += letter;
+                }
+            }
+            return cleanString;
+        }
+ 
     }
 }
 
