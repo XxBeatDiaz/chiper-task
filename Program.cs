@@ -18,6 +18,52 @@
             { 'V', 'E' }, { 'W', 'D' }, { 'X', 'C' },
             { 'Y', 'B' }, { 'Z', 'A' }
         };
+
+
+        //convert string to array-string(word)
+        static string[] ConvertToArray(string str)
+        {
+            string[] arrStr = str.Split(' ');
+            return arrStr;
+        }
+
+        //Accepts a word and a string and returns how many times it appears.
+        static int CountWordExists(string[] wordArray, string word)
+        {
+            int countWord = 0;
+            foreach (var item in wordArray)
+            {
+                if (item == word)
+                {
+                    countWord++;
+                }
+            }
+            return countWord;
+        }
+        
+        //Cleaning a string of unnecessary characters
+        static string CleanString(string str)
+        {
+            string cleanString = "";
+            foreach (char letter in str)
+            {
+                if (char.IsLetter(letter) || letter == ' ')
+                {
+                    cleanString += letter;
+                }
+            }
+            return cleanString;
+        }
+ 
+        //Clearing an array of empty cells
+        static string[] CleanArray(string[] wordArray)
+        {
+            List<string> ListWord = new List<string>();
+            ListWord = wordArray.ToList();
+            ListWord.RemoveAll(r => r == "");
+            string[] cleanArr = ListWord.ToArray();
+            return cleanArr;
+        }
     }
 }
 
