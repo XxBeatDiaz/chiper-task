@@ -13,11 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Chiper task")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19eb07c3774b7631fd1df9cad373be4bc4e48568")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d43a461a0ad68a0571ab80d25d2f388d1fe43a40")]
->>>>>>> 837fb5c5d23183337fbaa87f303baf6b6063c364
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64db3fc578be37e231c5ea5330e50c0a4a160670")]
 [assembly: System.Reflection.AssemblyProductAttribute("Chiper task")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Chiper task")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
