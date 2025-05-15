@@ -4,7 +4,15 @@
     {
         static void Main()
         {
-            
+            string message = GetMessage();
+            string[] words = GetDengerWord();
+            string decryptedText = DecryptText(message);
+            string cleanText = CleanString(decryptedText);
+            string[] messageToArr = ConvertToArray(cleanText);
+            string[] cleanArr = CleanArray(messageToArr);
+            int totalCount = SearchResults(cleanArr);
+            System.Console.WriteLine(PrintWarninglavel(totalCount));
+              
         }
 
         // Gets text and decrypt it by atbash.
@@ -21,7 +29,7 @@
         }
 
         // Gets encrypt char and return it decrypt by atbash.
-        static char ChangeAtbash(char c)
+        static char ChangeAtbash(char letter)
         {
             Dictionary<char, char> atbashDicti = new Dictionary<char, char>
             {
@@ -36,18 +44,40 @@
                 { 'Y', 'B' }, { 'Z', 'A' }
             };
 
-            char decryptChar = c;
+            char decryptChar = letter;
             foreach (var encryptedLetter in atbashDicti.Keys)
             {
-                if (encryptedLetter == c)
+                if (encryptedLetter == letter)
                 {
-                    decryptChar = atbashDicti[c];
+                    decryptChar = atbashDicti[letter];
                 }
             }
             return decryptChar;
         }
 
+        //message.
+        static string GetMessage()
+        {
+            string message = """
+            Lfi ulixvh ziv kivkzirmt uli z nzqli zggzxp lm gsv Arlmrhg vmvnb.
+            Gsv ilxpvg fmrgh ziv ivzwb zmw dzrgrmt uli gsv hrtmzo.
+            Ylnyh szev yvvm kozxvw mvzi pvb olxzgrlmh.
+            Mfpsyz urtsgvih ziv hgzmwrmt yb uli tilfmw rmurogizgrlm.
+            Gsv zggzxp droo yv hfwwvm zmw hgilmt -- gsvb dlm’g hvv rg xlnrmt.
+            Dv nfhg hgzb srwwvm zmw pvvk gsv kozm hvxivg fmgro gsv ozhg nlnvmg.
+            Erxglib rh mvzi. Hgzb ivzwb. 
+            """;
+            return message;
+        }
 
+        //return denger words.
+        static string[] GetDengerWord()
+        {
+            string[] dengerWord = ["bomb", "nukhba", "fighter", "rocket", "secret"];
+            return dengerWord;
+        }
+
+        //Text analysis and data retrieval.
 
 
         //Convert string to array-string(word)
@@ -71,6 +101,23 @@
             return countWord;
         }
 
+        //Prints the dangerous word and the number of times it appears in the textץ
+        static int SearchResults(string[] text)
+        {
+            int totalCount = 0;
+            
+            foreach (var item in GetDengerWord())
+            {
+                int currentCount = CountWordExists(text, item);
+                totalCount += currentCount;
+                System.Console.WriteLine($"Word: {item} - appears {currentCount} times in the text.");   
+            }
+            return totalCount;
+        }
+
+        //return the final result.
+
+
         //Cleaning a string of unnecessary characters
         static string CleanString(string str)
         {
@@ -81,8 +128,34 @@
                 {
                     cleanString += letter;
                 }
+                else if (letter == '.')
+                {
+                    cleanString += '\n';
+                }
             }
             return cleanString;
+        }
+
+        //print the warning and sum the dangerous words.
+        static string PrintWarninglavel(int totalPoints)
+        {
+            string lavel = "";
+            if (totalPoints >= 1 && totalPoints <= 5)
+            {
+                lavel = $"The points: {totalPoints} \nlavel: - WARNING!";
+                return lavel;
+            } 
+            else if (totalPoints >= 6 && totalPoints <= 10)
+            {
+                lavel = $"The points: {totalPoints} \nlavel: - DANGER!";
+                return lavel;
+            }
+            else if (totalPoints >= 11)
+            {
+                lavel = $"The points: {totalPoints} \nlavel: - ULTRA ALERT!";
+                return lavel;
+            }
+            return "Routine!";
         }
 
         //Clearing an array of empty cells
