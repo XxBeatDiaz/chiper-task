@@ -36,7 +36,7 @@
                 { 'Y', 'B' }, { 'Z', 'A' }
             };
 
-            char decryptChar = 'c';
+            char decryptChar = c;
             foreach (var encryptedLetter in atbashDicti.Keys)
             {
                 if (encryptedLetter == c)
