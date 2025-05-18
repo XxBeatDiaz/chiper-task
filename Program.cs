@@ -10,7 +10,7 @@
             string cleanText = CleanString(decryptedText);
             string[] messageToArr = ConvertToArray(cleanText);
             string[] cleanArr = CleanArray(messageToArr);
-            int totalCount = SearchResults(cleanArr);
+            int totalCount = SearchResults(cleanArr, words);
             System.Console.WriteLine(PrintWarninglavel(totalCount));
               
         }
@@ -102,11 +102,11 @@
         }
 
         //Prints the dangerous word and the number of times it appears in the textץ
-        static int SearchResults(string[] text)
+        static int SearchResults(string[] text, string[] words)
         {
             int totalCount = 0;
             
-            foreach (var item in GetDengerWord())
+            foreach (var item in words)
             {
                 int currentCount = CountWordExists(text, item);
                 totalCount += currentCount;
